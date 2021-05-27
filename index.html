@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+    <script>
+        const Discord = require('discord.js');
+    const mongoose = require('mongoose');
+    const Guild = require("./data/guild.js");
+    const User = require('./data/user.js');
+    </script>
+    <script>
+        const a = document.querySelectorAll('text'),
+            username = `${user.username}`,
+            userid = `#${user.id}`,
+            userrank = `#${user.level}`,
+            userlevel = `#${user.level}`;
+        a[1].innerHTML = `${username} <tspan style="fill: #7F8384" font-size="12">${userid}</tspan>`
+        a[0].innerHTML = `
+        <tspan fill="white">
+            RANK
+            <tspan font-size="30">
+                ${userrank}
+            </tspan>
+        </tspan>
+        <tspan fill="#2ecc71">
+            LEVEL
+            <tspan font-size="30">${userlevel}</tspan>
+        </tspan>`
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="card">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="467px" height="141px">
+            <defs>
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+                    @font-face {
+                        font-family: 'DejaVu';
+                        src: local('DejaVu'), url('https://cdn.mee6.xyz/assets/DejaVuSans.ttf');
+                    }
+                </style>
+
+            </defs>
+
+            <rect id="rect" width="100%" height="100%" rx="3" ry="3" style="fill:#23272A;"></rect>
+
+
+            <rect y="18" x="12" rx="3" ry="3" width="443" height="105" style="fill:black;opacity:0.75;"></rect>
+
+
+            <!-- === Avatar. ===
+                 Radius of circle = rc = 40px
+                 Width of circle = height of circle = rc * 2 = 80px
+                 margin left of avatar = mla = 21px
+                 margin top of avatar = mta = 31px -->
+            <!-- Border of avatar.
+                 This border is made by a frame that is bigger than the avatar and behind it
+                 centered at the same point.
+
+                 Width of border = wb = 4px
+                 Radius of border = rb = rc + wb/2 = 42px
+                  -->
+            <circle r="42" cx="61" cy="71" style="fill: black;"></circle>
+            <clipPath id="clipCircle">
+                <!-- cx = mla + r = 21 + 40 = 61
+                     cy = mta + r = 31 + 40 = 71 -->
+                <circle r="40" cx="61" cy="71"></circle>
+            </clipPath>
+            <image x="21" y="31" width="80" height="80" clip-path="url(#clipCircle)" xlink:href="https://cdn.discordapp.com/avatars/265797211776876546/3d43c3bcfdc002887c103624f73bd3f6.png"></image>
+
+            <!-- Activity status -->
+            <circle r="12" cx="92" cy="97" style="fill: black;"></circle>
+            <circle r="10" cx="92" cy="97" style="fill: #44b37f;"></circle>
+
+            <text x="441" y="50" font-family="Poppins" font-size="12" text-anchor="end" style="stroke: black; stroke-width: 0.2px">
+                <tspan fill="white">
+                    RANK
+                    <tspan font-size="30">
+                        #44
+                    </tspan>
+                </tspan>
+                <tspan fill="#2ecc71">
+                    LEVEL
+                    <tspan font-size="30">12</tspan>
+                </tspan>
+            </text>
+
+
+            <text x="137" y="83" font-family="DejaVu" font-size="" fill="white">
+                𝔽𝕠𝕩 * ℕ𝕋 🦊
+                <tspan style="fill: #7F8384" font-size="12">#3861</tspan>
+            </text>
+
+            <text x="441" y="83" font-family="Poppins" font-size="12" fill="white" text-anchor="end">
+                429
+                <tspan style="fill: #7F8384"> / 1337 XP</tspan>
+            </text>
+
+            <rect x="128" y="91" rx="12" ry="12" width="318" height="20" style="fill:black;"></rect>
+            <rect x="129" y="92" rx="9" ry="9" width="316" height="18" style="fill:#484B4E;"></rect>
+            <rect x="129" y="92" rx="9" ry="9" width="10" height="18" style="fill:#2ecc71;"></rect>
+
+        </svg>
+    </div>
+</div>
+<!--<script src="bot.js"></script>-->
+</body>
+</html>
