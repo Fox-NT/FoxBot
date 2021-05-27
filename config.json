@@ -1,7 +1,7 @@
 {
-  "token": "ODQzMzUyNzc5NjkwODY4NzY3.YKCnew.U4epnvFKh63hWy303jpPkZmU2bM",
+  "token": "",
   "prefix": "!",
-  "dataURL": "mongodb+srv://FoxBot:0232002320m@foxbot.pgwyh.mongodb.net/FoxBot?retryWrites=true&w=majority",
+  "dataURL": "",
   "upXP": "10",
   "timely": "21600000",
   "how": "100",
